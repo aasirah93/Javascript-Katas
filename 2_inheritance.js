@@ -27,4 +27,6 @@ Magazine.prototype = Object.create(Book.prototype);
 
 const mag1 = new Magazine('Mag One, John Dough', '2018', 'Jan');
 
+Magazine.prototype.constructor = Magazine;
+
 console.log(mag1)
